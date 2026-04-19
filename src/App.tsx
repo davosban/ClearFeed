@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Rss, Copy, Sparkles, AlertCircle, RefreshCw, ChevronRight, ChevronDown, Menu, Trash2, Download, Upload } from 'lucide-react';
 import { fetchFeed, rewriteArticleWithAI } from './api';
-import DOMPurify from 'isomorphic-dompurify';
+import DOMPurify from 'dompurify';
 import Markdown from 'react-markdown';
 
 interface FeedItem {
